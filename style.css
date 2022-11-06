@@ -43,7 +43,8 @@ body * {
 
 #app {
   width: fit-content;
-  margin: 52px auto;
+  margin: auto;
+  padding-top: 52px;
 }
 
 header {
@@ -112,6 +113,7 @@ header {
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
+
   color: var(--card-h2-span-color);
 }
 .card h2:hover,
@@ -120,7 +122,7 @@ header {
   transform: scale(1.1);
 }
 
-.card h2:hover,
+.card h2,
 .card ul li strong,
 .card ul li img {
     transition: transform 0.3s;
@@ -128,7 +130,7 @@ header {
 
 .card {
   opacity: 0;
-  animation: appear .4s forwards;
+  animation: appear 0.4s forwards;
 }
 
 @keyframes appear {
